@@ -4,7 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>
+            Laravel
+        </title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -127,6 +129,12 @@
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
+
+                @php 
+                $p = \App\SBlog\Core\BlogApp::get_instance()->getProperty('admin_email');
+                dd($p);
+                @endphp
+
             </div>
         </div>
     </body>
