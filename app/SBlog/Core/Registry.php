@@ -1,5 +1,8 @@
 <?php
+
+
     namespace App\SBlog\Core;
+
 
     class Registry
     {
@@ -24,5 +27,6 @@
         {
             return self::$properties;
         }
+
 
     }
